@@ -30,16 +30,20 @@
 body {
   background-color: rgba(250, 235, 215, 0.19);
 }
+
+header#navigation {
+  position: fixed;
+}
 nav.navbar {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 35px;
+  padding: 5px 35px;
   position: relative;
   top: 0;
   left: 0;
-  /* z-index: 100; */
+  z-index: 100;
   background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
   backdrop-filter: blur(50px);
 }
@@ -81,39 +85,64 @@ ul.navbar-nav .nav-link:hover {
 /* cotentent */
 section.video {
   position: relative;
-  /* height: 650px; */
-  /* video yg sebelumnya melewati batas
-  bisa di tutupi dengen overfow */
+  top: 0;
+  border: 1px solid #eee;
+  width: 100%;
   overflow: hidden;
-  height: 600px;
-  border: 1px solid black;
 }
 
-section video {
-  position: absolute;
+video#video-banner {
   max-width: 100%;
-  left: 0;
   height: auto;
-  z-index: -1;
 }
 
 header.nama-kampus {
+  border: 1px solid salmon;
+  position: absolute;
+  margin-bottom: 260px;
+  bottom: 0;
+  font-size: 45px;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
   color: transparent;
   -webkit-text-stroke: 1px whitesmoke;
-  text-align: center;
-  margin-top: 200px;
-  font-size: 45px;
-  font-weight: bold;
   font-family: "Anton", sans-serif;
 }
 
 header.nama-kampus p {
-  margin-top: 6px;
+  margin-top: 10px;
   letter-spacing: 6px;
-
 }
 
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  /* border: 1px solid black; */
+}
 
+.visi, .misi {
+  font-size: 13px;
+  width: 350px;
+  font-family: sans-serif;
+}
+
+.visi h4, .misi h4 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 12px;
+  font-family: "Anton", sans-serif;
+}
+
+.vertical {
+  border-left: 1px solid #333;
+  height: 100px;
+  width: 2px;
+  /* border: 1px solid salmon; */
+}
 /* tabet */
 @media screen and (max-width: 768px) and  (max-width: 1023px) {
   nav.navbar {
@@ -162,6 +191,7 @@ header.nama-kampus p {
    background-color: rgba(170, 169, 169, 0.535);
    backdrop-filter: blur(100px);
    overflow-y: hidden;
+   z-index: 1;
    transition: .3s ease-in-out;
   }
 
