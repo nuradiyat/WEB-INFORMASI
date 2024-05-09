@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Jersey+25&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Jersey+25&display=swap");
 
 /* variabel
 :root {
@@ -29,7 +29,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 3px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -49,7 +49,7 @@ header#navigation {
   position: fixed;
   top: 0;
   width: 100%;
-  /* left: 0; */
+  left: 0;
   z-index: 1;
 }
 nav.navbar {
@@ -62,7 +62,21 @@ nav.navbar {
   top: 0;
   left: 0;
   z-index: 100;
-  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
   backdrop-filter: blur(50px);
 }
 
@@ -84,7 +98,7 @@ ul.navbar-nav {
   display: flex;
   gap: 2rem;
   list-style: none;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 ul.navbar-nav .nav-link {
@@ -104,9 +118,8 @@ ul.navbar-nav .nav-link:hover {
 section.video {
   position: relative;
   top: 50px;
-  border: 1px solid #eee;
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 video#video-banner {
@@ -115,7 +128,6 @@ video#video-banner {
 }
 
 header.nama-kampus {
-  /* border: 1px solid salmon; */
   position: absolute;
   margin-bottom: 260px;
   bottom: 0;
@@ -133,26 +145,82 @@ header.nama-kampus p {
   letter-spacing: 6px;
 }
 
-.about {
+/* about */
+section#about {
+  margin-top: 47px;
+  background-color: #333;
+}
+article.about {
+  display: flex;
+  flex-direction: column;
+}
+
+article.pendidikan {
+  margin-top: 45px;
+  width: 100%;
+  padding: 60px 30px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 70px;
-  /* border: 1px solid black; */
 }
 
-.visi, .misi {
+header.info {
+  width: 450px;
+}
+
+header.info h4 {
+  font-family: "Anton", sans-serif;
+  font-size: 27px;
+  font-weight: bold;
+  color: #3e4078;
+}
+
+header.info p {
+  margin-top: 18px;
+}
+header.info a{
+  position: relative;
+  font-family: "Anton", sans-serif;
+  top: 25px;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 15px;
+  border-radius: 10px 20px;
+  color: white; 
+  background-color: #3e4078;;
+}
+
+figure.study img{
+  width:  380px;
+  height: 370px;
+  border-radius: 10px 30px 10px 30px;
+}
+.visi-misi {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.visi,
+.misi {
   font-size: 13px;
   width: 350px;
   font-family: sans-serif;
 }
 
-.visi h4, .misi h4 {
+.visi h4,
+.misi h4 {
   text-align: center;
   font-weight: bold;
   font-size: 30px;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
   font-family: "Anton", sans-serif;
+  color: #3e4078;
 }
 
 .vertical {
@@ -162,7 +230,7 @@ header.nama-kampus p {
   /* border: 1px solid salmon; */
 }
 /* tabet */
-@media screen and (max-width: 768px) and  (max-width: 1023px) {
+@media screen and (max-width: 768px) and (max-width: 1023px) {
   nav.navbar {
     padding: 23px 35px;
   }
@@ -175,42 +243,51 @@ header.nama-kampus p {
     max-width: 100%;
     height: auto;
   }
-
 }
 
 /* phone */
 @media screen and (max-width: 767px) {
   .icon {
-      display: inline-flex;
+    display: inline-flex;
+    font-size: 40px;
   }
 
   #check:checked ~ .icon #open-menu {
     display: none;
   }
-  
+
   .icon #close-menu {
     display: none;
   }
-  
+
   #check:checked ~ .icon #close-menu {
     display: block;
   }
 
+  nav.navbar {
+    padding: 6px 25px;
+  }
+
+  nav.navbar figure img  {
+    width: 35px;
+    height: 35px;
+  }
+
   ul.navbar-nav {
-   position: absolute;
-   top: 95px;
-   left: 0;
-   width: 100%;
-   height: 0;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   background-color: rgba(170, 169, 169, 0.535);
-   backdrop-filter: blur(100px);
-   overflow-y: hidden;
-   z-index: 1;
-   transition: .3s ease-in-out;
+    position: absolute;
+    top: 52px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(170, 169, 169, 0.535);
+    backdrop-filter: blur(100px);
+    overflow-y: hidden;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
   }
 
   ul.navbar-nav.show {
@@ -221,5 +298,4 @@ header.nama-kampus p {
     width: 100%;
     height: auto;
   }
-
 }
