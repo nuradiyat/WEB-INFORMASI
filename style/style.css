@@ -32,7 +32,7 @@
   width: 3px;
 }
 
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-track-piece {
   background: linear-gradient(transparent, #00c6ff);
   border-radius: 6px;
 }
@@ -42,18 +42,20 @@
 }
 
 body {
+  overflow-x: hidden;
   background-color: rgba(250, 235, 215, 0.19);
 }
 
 header#navigation {
+  max-width: 100%;
   position: fixed;
   top: 0;
-  width: 100%;
+  right: 0;
   left: 0;
   z-index: 1;
 }
 nav.navbar {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -148,24 +150,27 @@ header.nama-kampus p {
 /* about */
 section#about {
   margin-top: 47px;
-  background-color: #333;
 }
+
 article.about {
   display: flex;
   flex-direction: column;
+  font-size: 12px;
 }
 
-article.pendidikan {
+article.pendidikan, article.visi-misi {
   margin-top: 45px;
   width: 100%;
   padding: 60px 30px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
 
 header.info {
   width: 450px;
+  font-family: sans-serif;
 }
 
 header.info h4 {
@@ -178,7 +183,7 @@ header.info h4 {
 header.info p {
   margin-top: 18px;
 }
-header.info a{
+header.info a {
   position: relative;
   font-family: "Anton", sans-serif;
   top: 25px;
@@ -189,29 +194,16 @@ header.info a{
   letter-spacing: 2px;
   padding: 15px;
   border-radius: 10px 20px;
-  color: white; 
-  background-color: #3e4078;;
+  color: white;
+  background-color: #3e4078;
 }
 
-figure.study img{
-  width:  380px;
+figure.study img {
+  width: 380px;
   height: 370px;
   border-radius: 10px 30px 10px 30px;
 }
-.visi-misi {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 30px;
-}
 
-.visi,
-.misi {
-  font-size: 13px;
-  width: 350px;
-  font-family: sans-serif;
-}
 
 .visi h4,
 .misi h4 {
@@ -228,6 +220,10 @@ figure.study img{
   height: 100px;
   width: 2px;
   /* border: 1px solid salmon; */
+}
+
+hr {
+  display: none;
 }
 /* tabet */
 @media screen and (max-width: 768px) and (max-width: 1023px) {
@@ -268,7 +264,7 @@ figure.study img{
     padding: 6px 25px;
   }
 
-  nav.navbar figure img  {
+  nav.navbar figure img {
     width: 35px;
     height: 35px;
   }
@@ -289,7 +285,7 @@ figure.study img{
     z-index: 1;
     transition: 0.3s ease-in-out;
   }
-
+  
   ul.navbar-nav.show {
     height: 17.7rem;
   }
@@ -297,5 +293,41 @@ figure.study img{
   video#video-banner {
     width: 100%;
     height: auto;
+  }
+
+  article.about,
+  article.visi-misi {
+    flex-direction: column;
+  }
+  article.pendidikan {
+    padding: 0px 60px;
+  }
+
+  header.info a {
+    box-sizing: content-box;
+    padding: 10px;
+    font-size: 6px;
+  }
+  
+  div.vertical {
+    display: none;
+  }
+  figure.study img {
+    width: 220px;
+    height: 220px;
+    margin-top: 100px;
+  }
+
+  article.visi-misi {
+    padding: 0px 90px;
+  }
+
+  article.visi-misi hr {
+    display: block;
+    border: none;
+    height: 1px;
+    width: 200px;
+    color: #333;
+    background-color: #333;
   }
 }
