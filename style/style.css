@@ -158,7 +158,8 @@ article.about {
   font-size: 12px;
 }
 
-article.pendidikan, article.visi-misi {
+article.pendidikan,
+article.visi-misi {
   margin-top: 45px;
   width: 100%;
   padding: 60px 30px;
@@ -166,13 +167,17 @@ article.pendidikan, article.visi-misi {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  border: 1px solid salmon;
 }
 
 header.info {
   width: 450px;
   font-family: sans-serif;
 }
-
+header.visi,
+header.misi {
+  width: 400px;
+}
 header.info h4 {
   font-family: "Anton", sans-serif;
   font-size: 27px;
@@ -182,20 +187,36 @@ header.info h4 {
 
 header.info p {
   margin-top: 18px;
+  font-family: sans-serif;
+  font-size: 14px;
 }
 header.info a {
-  position: relative;
-  font-family: "Anton", sans-serif;
-  top: 25px;
-  text-decoration: none;
-  box-sizing: border-box;
-  font-size: 10px;
+  box-shadow: inset 0px 1px 0px 0px #efdcfb;
+  background: linear-gradient(to bottom, #9118fb84 5%, #7fcce8 100%);
+  background-color: #f4edfa;
+  border-radius: 6px;
+  border: 1px solid #8bc3e8;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 13px;
   font-weight: bold;
-  letter-spacing: 2px;
-  padding: 15px;
-  border-radius: 10px 20px;
-  color: white;
-  background-color: #3e4078;
+  padding: 6px 8px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #9752cc;
+  margin-top: 17px;
+}
+
+header.info a:hover {
+  background: linear-gradient(to top, #9118fb56 5%, #7fcce8 100%);
+  /* background: linear-gradient(to bottom, #7fcce8 5%, #f4edfa 100%); */
+  background-color: #7fcce8;
+}
+
+header.info a:active {
+  position: relative;
+  top: 1px;
 }
 
 figure.study img {
@@ -203,7 +224,6 @@ figure.study img {
   height: 370px;
   border-radius: 10px 30px 10px 30px;
 }
-
 
 .visi h4,
 .misi h4 {
@@ -285,7 +305,7 @@ hr {
     z-index: 1;
     transition: 0.3s ease-in-out;
   }
-  
+
   ul.navbar-nav.show {
     height: 17.7rem;
   }
@@ -295,12 +315,14 @@ hr {
     height: auto;
   }
 
-  article.about,
-  article.visi-misi {
+  article.about {
     flex-direction: column;
-  }
-  article.pendidikan {
     padding: 0px 60px;
+  }
+
+  header.visi,
+  header.misi {
+    width: 200px;
   }
 
   header.info a {
@@ -308,7 +330,7 @@ hr {
     padding: 10px;
     font-size: 6px;
   }
-  
+
   div.vertical {
     display: none;
   }
@@ -318,15 +340,12 @@ hr {
     margin-top: 100px;
   }
 
-  article.visi-misi {
-    padding: 0px 90px;
-  }
-
   article.visi-misi hr {
     display: block;
     border: none;
     height: 1px;
-    width: 200px;
+    margin: 30px 0px;
+    width: 120px;
     color: #333;
     background-color: #333;
   }
