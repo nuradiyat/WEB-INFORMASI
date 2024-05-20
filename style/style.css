@@ -120,12 +120,13 @@ ul.navbar-nav .nav-link:hover {
 section.video {
   position: relative;
   top: 50px;
-  width: 100%;
+  /* right: 0; */
+  /* width: 100%; */
   /* overflow: hidden; */
 }
 
 video#video-banner {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
