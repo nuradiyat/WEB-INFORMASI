@@ -117,6 +117,10 @@ ul.navbar-nav .nav-link:hover {
 }
 
 /* cotentent */
+section.content {
+  max-width: 100%;
+  overflow: hidden;
+}
 section.video {
   position: relative;
   top: 50px;
@@ -125,13 +129,13 @@ section.video {
   /* overflow: hidden; */
 }
 
-section:nth-child(1) {
-  display: none;
-}
-
 video#video-banner {
   width: 100%;
   height: auto;
+}
+
+section.video video:nth-child(2) {
+  display: none;
 }
 
 header.nama-kampus {
@@ -192,7 +196,7 @@ header.info h4 {
 header.info p {
   margin-top: 18px;
   font-family: sans-serif;
-  font-size: 14px;
+  font-size: 12px;
 }
 header.info a {
   box-shadow: inset 0px 1px 0px 0px #efdcfb;
@@ -279,7 +283,7 @@ hr {
   .icon #close-menu {
     display: none;
   }
-
+  
   #check:checked ~ .icon #close-menu {
     display: block;
   }
@@ -292,7 +296,7 @@ hr {
     width: 35px;
     height: 35px;
   }
-
+  
   ul.navbar-nav {
     position: absolute;
     top: 52px;
@@ -317,6 +321,14 @@ hr {
   video#video-banner {
     width: 100%;
     height: auto;
+  }
+
+  section.video video:nth-child(1) {
+    display: none;
+  }
+
+  section.video video:nth-child(2) {
+    display: block;
   }
 
   article.about {
