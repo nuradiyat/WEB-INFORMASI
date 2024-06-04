@@ -321,7 +321,7 @@ button {
     overflow: hidden; /* Hindari overflow */
     position: relative;
   }
-
+  
   video#video-banner {
     position: absolute;
     top: 50%;
@@ -331,15 +331,20 @@ button {
     object-fit: cover; /* Mengisi kontainer dan menjaga rasio aspek */
     transform: translate(-50%, -50%); /* Center video */
   }
-
+  
   section.video video:nth-child(1) {
     display: none;
   }
-
+  
   section.video video:nth-child(2) {
     display: block;
     top: 0;
     /* height: auto; */
+  }
+  
+  header.ilustration img {
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -417,7 +422,7 @@ button {
     padding: 10px;
     font-size: 6px;
   }
-
+  
   section.vertical {
     display: none;
   }
@@ -426,7 +431,7 @@ button {
     height: 220px;
     margin-top: 100px;
   }
-
+  
   article.visi-misi hr {
     display: block;
     border: none;
@@ -435,5 +440,10 @@ button {
     width: 120px;
     color: #333;
     background-color: #333;
+  }
+  
+  header.ilustration img {
+    width: 35px;
+    height: 35px;
   }
 }
