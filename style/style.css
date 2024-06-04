@@ -196,19 +196,16 @@ header.info h4 {
 }
 
 header.info p {
-  margin-top: 18px;
+  margin: 18px 0px;
   font-family: sans-serif;
-  font-size: 12px;
+  font-size: 15px;
 }
 header.info a {
   box-shadow: inset 0px 1px 0px 0px #efdcfb;
   border: 1px solid #8bc3e8;
   text-decoration: none;
-  margin-top: 15px;
   font-family: sans-serif;
-  font-size: 18px;
   font-weight: bold;
-  padding: 8px 30px;
   border-radius: 25px;
   background-color: rgb(84, 226, 186);
   color: rgb(254, 254, 254);
