@@ -449,13 +449,13 @@ section.card button {
   }
 
   header.ilustration h3 {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: bold;
   }
 
   header.ilustration img {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
   }
   
   section.card p {
