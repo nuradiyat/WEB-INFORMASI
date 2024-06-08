@@ -187,6 +187,7 @@ header.info {
 header.visi,
 header.misi {
   width: 400px;
+  height: 180px;
 }
 header.info h4 {
   font-family: "Anton", sans-serif;
@@ -291,6 +292,8 @@ section.card button {
   margin-top: 30px;
   /* outline: none; */
 }
+
+
 /* tabet */
 @media screen and (max-width: 1023px) {
   nav.navbar {
@@ -330,12 +333,17 @@ section.card button {
     top: 0;
     /* height: auto; */
   }
-
-  section.card {
-    width: 300px;
-    height: 300px;
+  /* visi misi */
+  header.visi, header.misi {
+    width: 320px;
   }
 
+  /* card */
+  section.card {
+    width: 300px;
+    height: 190px;
+  }
+ 
   header.ilustration h3 {
     font-size: medium;
     font-weight: bold;
@@ -403,19 +411,16 @@ section.card button {
     padding: 10px 13px;
   }
 
-  article.pendidikan,
-  article.visi-misi {
-    margin-top: 0px;
-  }
-
+/* about */
   article.about {
-    flex-direction: column;
+    /* flex-direction: column; */
     padding: 0px 60px;
   }
   
+/* visi misi */
   header.visi,
   header.misi {
-    width: 200px;
+    width: 350px;
   }
   
   header.info a {
@@ -437,17 +442,16 @@ section.card button {
     display: block;
     border: none;
     height: 1px;
-    margin: 30px 0px;
+    margin: 30px 50px;
     width: 150px;
     color: #333;
     background-color: #333;
   }
 
-  section.card {
-    width: 225px;
-    height: 150px;
+  /* card */
+  section.kartu {
+    padding: 10px 30px;
   }
-
   header.ilustration h3 {
     font-size: 15px;
     font-weight: bold;
