@@ -209,7 +209,6 @@ header.info p {
   font-size: 15px;
 }
 header.info a {
-  box-shadow: inset 0px 1px 0px 0px #efdcfb;
   text-decoration: none;
   font-family: sans-serif;
   font-size: 15px;
@@ -218,7 +217,7 @@ header.info a {
   background-color: rgb(84, 226, 186);
   color: rgb(254, 254, 254);
   padding: 8px 30px;
-  transition: 1.2s;
+  transition: 1s;
 }
 
 header.info a:hover {
@@ -289,7 +288,7 @@ header.ilustration img {
 }
 
 section.card p {
-  /* font-size: 8px; */
+  font-size: 8px;
   margin-bottom: 30px;
 }
 
@@ -302,7 +301,6 @@ section.card a {
   border: 0;
   background-color: rgb(84, 226, 186);
   color: rgb(254, 254, 254);
-  margin-top: 30px;
   text-decoration: none;
   transition: 1.2s;
   /* outline: none; */
@@ -314,13 +312,14 @@ section.card a:hover {
 
 /* berita */
 
+
 /* video campus */
 section.campus-video {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 250px;
+  height: 570px;
 }
 
 section.campus-video figure {
@@ -338,6 +337,7 @@ section.campus-video figure iframe {
   width: 100%;
   height: 100%;
 }
+
 
 /* tabet */
 @media screen and (max-width: 1023px) {
@@ -396,8 +396,8 @@ section.campus-video figure iframe {
   }
 }
 
-/* phone */
 
+/* phone */
 @media screen and (max-width: 767px) {
   .icon {
     display: inline-flex;
@@ -446,21 +446,30 @@ section.campus-video figure iframe {
     height: 17.7rem;
   }
 
+  /* about */
   /* video#video-banner {
     width: 100%;
     height: 100vh;
   } */
 
   header.info a {
-    font-size: 18px;
+    font-size: 40px;
     margin-top: 15px;
-    padding: 10px 13px;
+    padding: 8px 30px;
   }
 
   /* about */
   article.about {
     /* flex-direction: column; */
     padding: 0px 60px;
+  }
+
+  article.pendidikan {
+    width: 300px;
+  }
+
+  article.about p {
+    font-size: 10px;
   }
 
   /* visi misi */
@@ -470,9 +479,8 @@ section.campus-video figure iframe {
   }
 
   header.info a {
-    box-sizing: content-box;
-    padding: 5px 10px;
-    font-size: 10px;
+    padding: 7px 15px;
+    font-size: 12px;
   }
 
   section.vertical {
@@ -498,6 +506,11 @@ section.campus-video figure iframe {
   section.kartu {
     padding: 10px 30px;
   }
+
+  section.card {
+    height: 150px;
+  }
+
   header.ilustration h3 {
     font-size: 15px;
     font-weight: bold;
@@ -509,12 +522,20 @@ section.campus-video figure iframe {
   }
 
   section.card p {
-    font-size: 8px;
+    font-size: 9px;
+    margin-bottom: 20px;
   }
 
-  section.card button {
-    font-size: 8px;
+  section.card a {
+    font-size: 10px;
     padding: 6px 10px;
-    margin-top: 10px;
+    /* margin-top: 5px; */
+  }
+
+  /* berita */
+
+  /* Content Video  */
+  section.campus-video {
+    height: 200px;
   }
 }
