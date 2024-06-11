@@ -311,7 +311,29 @@ section.card a:hover {
 }
 
 /* berita */
+/* section.berita {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 20px;
+}
 
+figure#berita {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+figure#berita img {
+  width: 300px;
+  height: 180px;
+}
+
+figure#berita img:first {
+  
+} */
 
 /* video campus */
 section.campus-video {
