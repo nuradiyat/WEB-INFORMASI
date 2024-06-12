@@ -1,0 +1,99 @@
+/* Gaya umum untuk semua kartu */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f9f9f9; /* Warna latar belakang default */
+}
+
+/* Gaya khusus untuk bagian pendaftaran */
+#pendaftaran {
+    background-color: #e0f7fa; /* Warna latar belakang khusus untuk pendaftaran */
+    border: 1px solid #00bcd4; /* Warna border khusus untuk pendaftaran */
+}
+
+/* Gaya umum untuk tombol */
+.click-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.click-button:hover {
+    background-color: #45a049;
+}
+
+/* Gaya khusus untuk bagian pendaftaran */
+#pendaftaran {
+    background-color: #e0f7fa;
+    border: 1px solid #00bcd4;
+    color: #00796b;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#pendaftaran h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+}
+
+#pendaftaran ol {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+#pendaftaran a {
+    color: #009688;
+    text-decoration: none;
+}
+
+#pendaftaran a:hover {
+    text-decoration: underline;
+}
+
+#form-pendaftaran form {
+    display: flex;
+    flex-direction: column;
+}
+
+#form-pendaftaran label {
+    margin-top: 10px;
+}
+
+#form-pendaftaran input {
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#form-pendaftaran button[type="submit"] {
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#form-pendaftaran button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#kembali-button {
+    background-color: #f44336; /* Warna merah */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#kembali-button:hover {
+    background-color: #d32f2f; /* Warna merah lebih gelap */
+}

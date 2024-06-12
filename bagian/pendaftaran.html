@@ -10,6 +10,56 @@
 </head>
 <body>
     <a href="../#kartu">Kembali2</a>
-    <a href="../index.html">Kembali</a>
+    <div class="card">
+        <h2>PENDAFTARAN</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit ligula fusce urna nisl, quam conubia nam sapien id penatibus.</p>
+    </div> 
+
+    <div class="card" id="pendaftaran">
+        <h2>SYARAT DAN KETENTUAN</h2>
+        <p>Untuk mendaftar ke universitas kami, silakan ikuti langkah-langkah berikut:</p>
+        <ol>
+            <li>Mengisi formulir pendaftaran online.</li>
+            <li>Menyiapkan dokumen-dokumen yang diperlukan seperti ijazah, transkrip nilai, dan foto terbaru.</li>
+            <li>Melakukan pembayaran biaya pendaftaran.</li>
+            <li>Mengikuti tes masuk dan wawancara.</li>
+        </ol>
+        <p>Untuk informasi lebih lanjut, silakan kunjungi <a href="link-ke-formulir-pendaftaran">Formulir Pendaftaran</a>.</p>
+        <button class="click-button" id="daftar-sekarang-button">DAFTAR SEKARANG</button>
+
+        <!-- Formulir Pendaftaran yang Tersembunyi -->
+        <div id="form-pendaftaran" style="display: none; margin-top: 20px;">
+            <form action="/submit-pendaftaran" method="post">
+                <label for="nama">Nama Lengkap:</label><br>
+                <input type="text" id="nama" name="nama" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="telepon">Nomor Telepon:</label><br>
+                <input type="tel" id="telepon" name="telepon" required><br><br>
+                <label for="ijazah">Upload Ijazah:</label><br>
+                <input type="file" id="ijazah" name="ijazah" accept=".pdf,.jpg,.png" required><br><br>
+                <button type="submit" class="click-button">Kirim</button>
+            </form>
+        </div>
+        <!-- Tombol Kembali -->
+        <button class="click-button" id="kembali-button" style="margin-top: 20px;">KEMBALI</button>
+    </div>
+        
+    <script>
+    document.getElementById('daftar-sekarang-button').addEventListener('click', function() {
+        var formPendaftaran = document.getElementById('form-pendaftaran');
+        if (formPendaftaran.style.display === 'none') {
+            formPendaftaran.style.display = 'block';
+        } else {
+            formPendaftaran.style.display = 'none';
+        }
+    });
+
+    document.getElementById('kembali-button').addEventListener('click', function() {
+        window.history.back();
+    });
+</script>
+
+    
 </body>
 </html>
