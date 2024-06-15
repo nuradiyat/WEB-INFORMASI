@@ -177,7 +177,7 @@ article.about {
 
 article.pendidikan,
 article.visi-misi {
-  margin-top: 45px;
+  margin-top: 60px;
   /* width: 100%; */
   padding: 60px 30px;
   display: flex;
@@ -311,14 +311,19 @@ section.card a:hover {
 }
 
 /* berita */
-section.berita header {
+section.berita {
+  width: 100%;
+  height: 88vh;
+  padding: 50px;
+}
+section.berita header.tittle {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100px;
   margin-top: 35px;
   font-family: "Anton", sans-serif;
-  font-size: 37px;
+  font-size: 30px;
   font-weight: bold;
   color: #3e4078;
 }
@@ -328,20 +333,73 @@ section.news {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  padding: 25px 20px;
-  gap: 26px;
+  padding: 20px 20px;
+  gap: 8px;
 }
 
-figure#berita img {
+figure#berita {
   width: 300px;
   height: 180px;
-  transition: 0.5s;
+  overflow: hidden;
+  position: relative;
 }
 
-section.berita img:hover > :not(:hover) {
-  opacity: 0.4;
-  cursor: pointer;
+
+figure#berita img {
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+
+figure#berita header {
+  width: 100%;
+  height: 100%;
+  bottom: -100%;
+  position: absolute;
+  background-color: #585a5b47;
+  backdrop-filter: blur(2px);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: 0.8s;
+}
+
+figure#berita:hover header {
+  position: absolute;
+  bottom: -10px;
+}
+figure#berita header h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+figure#berita header p {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 40px 0px;
+}
+
+figure#berita header a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: rgb(84, 226, 186);
+  color: rgb(254, 254, 254);
+  padding: 8px;
+  width: 50px;
+  text-align: center;
+  transition: 1s;
+}
+
+figure#berita header a:hover {
+  background-color: #38c3f6;
+}
+
 
 /* video campus */
 section.campus-video {
@@ -349,14 +407,22 @@ section.campus-video {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 570px;
+  height: 500px;
+  margin-bottom: 100px;
 }
+
+section.campus-video header h4.judul-video {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Anton", sans-serif;
+  color: #3e4078;
+} 
 
 section.campus-video figure {
   position: relative;
   width: 55%;
   padding-bottom: 30.9375%;
-  height: 0;
   overflow: hidden;
 }
 
@@ -369,24 +435,126 @@ section.campus-video figure iframe {
 }
 
 /* footer */
-footer.contact {
+footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 25px 50px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
 }
 
-section.location iframe {
-  border: none; /* Menghilangkan border default */
-  outline: none; /* Menghilangkan border biru pada focus */
+footer .social_icon {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  list-style-type: none;
+}
+
+footer header {
+  text-align: center;
+  padding: 15px;
+  font-size: 1em;
+}
+
+footer .social_icon li {
+  list-style: none;
+}
+
+footer .social_icon li a {
+  font-size: 1.3em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+footer .social_icon li a:hover {
+  transform: translateY(-10px);
+}
+
+section.maps {
+  width: 380px;
+  height: 345px;
+}
+
+section.maps header.header-maps  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 18px;
+  font-size: 20px;
+}
+
+footer .wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(../img/wave.png);
+  background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+  z-index: 1000;
+  opacity: 0.9;
+  bottom: 0;
+  animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 15px;
+  animation: animateWave_02 4s linear infinite;
+}
+
+footer .wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animateWave_02 3s linear infinite;
+}
+
+
+
+@keyframes animateWave {
+  0% {
+    background-position-x: 1000px;
+  }
+
+  100% {
+    background-position-x: 0px;
+  }
+}
+
+@keyframes animateWave_02 {
+  0% {
+    background-position-x: 0px;
+  }
+
+  100% {
+    background-position-x: 1000px;
+  }
 }
 
 /* tabet */
 @media screen and (max-width: 1023px) {
-  nav.navbar {
-    padding: 23px 35px;
-  }
-
   ul.navbar-nav .nav-link {
     font-size: 13px;
   }
@@ -570,9 +738,29 @@ section.location iframe {
   }
 
   /* berita */
+  section.berita {
+    padding: 0;
+    height: 100vh;
+  }
+
+  section.news {
+    padding: 0;
+  }
+
 
   /* Content Video  */
   section.campus-video {
-    height: 200px;
+    height: 320px;
+  }
+
+  section.campus-video header h4 {
+    padding-top: 50px;
+  }
+
+  /* footer */
+  section.maps iframe  {
+    width: 380px;
+    height: 230px;
+    text-align: center;
   }
 }
