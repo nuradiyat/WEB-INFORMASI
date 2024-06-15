@@ -368,7 +368,7 @@ figure#berita header {
 
 figure#berita:hover header {
   position: absolute;
-  bottom: -10px;
+  bottom: 0;
 }
 figure#berita header h4 {
   text-transform: uppercase;
