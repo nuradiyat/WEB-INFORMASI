@@ -260,7 +260,7 @@ section.kartu {
   gap: 10px;
   height: 100vh;
   position: relative;
-  padding-top: 60px;
+  padding: 20px;
 }
 
 section.card {
@@ -313,7 +313,7 @@ section.card a:hover {
 /* berita */
 section.berita {
   width: 100%;
-  height: 88vh;
+  height: 84vh;
   padding: 50px;
 }
 section.berita header.tittle {
@@ -585,10 +585,15 @@ footer .wave#wave4 {
   }
 
   header.nama-kampus {
-    display: none;
+    font-size: 18px;
   }
 
+  header.nama-kampus p {
+    margin-top: 9px;
+    letter-spacing: 2.5px;
+  }
   
+
   /* visi misi */
   header.visi,
   header.misi {
@@ -703,10 +708,6 @@ footer .wave#wave4 {
   }
 
   /* card */
-  section.kartu {
-    padding: 10px 30px;
-  }
-
   section.card {
     height: 150px;
   }
