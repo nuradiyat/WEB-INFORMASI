@@ -16,17 +16,16 @@
     </div> 
 
     <div class="card" id="pendaftaran">
-        <h2>SYARAT DAN KETENTUAN</h2>
+        <h2>PENDAFTARAN</h2>
         <p>Untuk mendaftar ke universitas kami, silakan ikuti langkah-langkah berikut:</p>
         <ol>
             <li>Mengisi formulir pendaftaran online.</li>
             <li>Menyiapkan dokumen-dokumen yang diperlukan seperti ijazah, transkrip nilai, dan foto terbaru.</li>
             <li>Melakukan pembayaran biaya pendaftaran.</li>
-            <li>Mengikuti tes masuk dan wawancara.</li>
+            <li>Mengikuti tes masuk dan wawancara (jika diperlukan).</li>
         </ol>
         <p>Untuk informasi lebih lanjut, silakan kunjungi <a href="link-ke-formulir-pendaftaran">Formulir Pendaftaran</a>.</p>
         <button class="click-button" id="daftar-sekarang-button">DAFTAR SEKARANG</button>
-
         <!-- Formulir Pendaftaran yang Tersembunyi -->
         <div id="form-pendaftaran" style="display: none; margin-top: 20px;">
             <form action="/submit-pendaftaran" method="post">
@@ -41,25 +40,25 @@
                 <button type="submit" class="click-button">Kirim</button>
             </form>
         </div>
-        <!-- Tombol Kembali -->
-        <button class="click-button" id="kembali-button" style="margin-top: 20px;">KEMBALI</button>
+                <!-- Tombol Kembali -->
+                <button class="click-button" id="kembali-button" style="margin-top: 20px;">KEMBALI</button>
     </div>
-        
+    
+
     <script>
-    document.getElementById('daftar-sekarang-button').addEventListener('click', function() {
-        var formPendaftaran = document.getElementById('form-pendaftaran');
-        if (formPendaftaran.style.display === 'none') {
-            formPendaftaran.style.display = 'block';
-        } else {
-            formPendaftaran.style.display = 'none';
-        }
-    });
-
-    document.getElementById('kembali-button').addEventListener('click', function() {
-        window.history.back();
-    });
-</script>
-
+        document.getElementById('daftar-sekarang-button').addEventListener('click', function() {
+            var formPendaftaran = document.getElementById('form-pendaftaran');
+            if (formPendaftaran.style.display === 'none') {
+                formPendaftaran.style.display = 'block';
+            } else {
+                formPendaftaran.style.display = 'none';
+            }
+        });
+    
+        document.getElementById('kembali-button').addEventListener('click', function() {
+            window.history.back();
+        });
+    </script>
     
 </body>
 </html>

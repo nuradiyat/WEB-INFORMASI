@@ -177,7 +177,7 @@ article.about {
 
 article.pendidikan,
 article.visi-misi {
-  margin-top: 45px;
+  margin-top: 60px;
   /* width: 100%; */
   padding: 60px 30px;
   display: flex;
@@ -200,6 +200,10 @@ header.info h4 {
   font-size: 27px;
   font-weight: bold;
   color: #3e4078;
+}
+
+header.visi-misi, p, ol {
+  font-size: 15px;
 }
 
 header.info p {
@@ -260,7 +264,8 @@ section.kartu {
   gap: 10px;
   height: 100vh;
   position: relative;
-  padding-top: 60px;
+  padding: 20px;
+  margin-top: 40px;
 }
 
 section.card {
@@ -288,7 +293,7 @@ header.ilustration img {
 }
 
 section.card p {
-  font-size: 8px;
+  font-size: 12.5 px;
   margin-bottom: 30px;
 }
 
@@ -311,6 +316,93 @@ section.card a:hover {
 }
 
 /* berita */
+section.berita {
+  width: 100%;
+  height: 84vh;
+  padding: 50px;
+}
+section.berita header.tittle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-top: 35px;
+  font-family: "Anton", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #3e4078;
+}
+
+section.news {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px 20px;
+  gap: 8px;
+}
+
+figure#berita {
+  width: 300px;
+  height: 180px;
+  overflow: hidden;
+  position: relative;
+}
+
+
+figure#berita img {
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+figure#berita header {
+  width: 100%;
+  height: 100%;
+  bottom: -100%;
+  position: absolute;
+  background-color: #585a5b47;
+  backdrop-filter: blur(2px);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: 0.8s;
+}
+
+figure#berita:hover header {
+  bottom: 0;
+}
+figure#berita header h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+figure#berita header p {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 40px 0px;
+}
+
+figure#berita header a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: rgb(84, 226, 186);
+  color: rgb(254, 254, 254);
+  padding: 8px;
+  width: 50px;
+  text-align: center;
+  transition: 1s;
+}
+
+figure#berita header a:hover {
+  background-color: #38c3f6;
+}
 
 
 /* video campus */
@@ -319,14 +411,22 @@ section.campus-video {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 570px;
+  height: 500px;
+  margin-bottom: 100px;
 }
+
+section.campus-video header h4.judul-video {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Anton", sans-serif;
+  color: #3e4078;
+} 
 
 section.campus-video figure {
   position: relative;
   width: 55%;
-  padding-bottom: 30.9375%; 
-  height: 0;
+  padding-bottom: 30.9375%;
   overflow: hidden;
 }
 
@@ -338,13 +438,123 @@ section.campus-video figure iframe {
   height: 100%;
 }
 
+/* footer */
+footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+footer .social_icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  list-style-type: none;
+}
+
+section.maps header {
+  display: flex;
+  justify-content: center;
+  font-size: 1.3em;
+}
+
+section.maps iframe {
+  height: 300px;
+}
+
+footer header {
+  text-align: center;
+  padding: 15px;
+  font-size: 1em;
+}
+
+footer .social_icon li {
+  list-style: none;
+}
+
+footer .social_icon li a {
+  font-size: 1.3em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+footer .social_icon li a:hover {
+  transform: translateY(-10px);
+}
+
+footer .wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(../img/wave.png);
+  background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateWave_02 4s linear infinite;
+}
+
+footer .wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animateWave_02 3s linear infinite;
+}
+
+
+
+@keyframes animateWave {
+  0% {
+    background-position-x: 1000px;
+  }
+
+  100% {
+    background-position-x: 0px;
+  }
+}
+
+@keyframes animateWave_02 {
+  0% {
+    background-position-x: 0px;
+  }
+
+  100% {
+    background-position-x: 1000px;
+  }
+}
 
 /* tabet */
 @media screen and (max-width: 1023px) {
-  nav.navbar {
-    padding: 23px 35px;
-  }
-
   ul.navbar-nav .nav-link {
     font-size: 13px;
   }
@@ -378,16 +588,38 @@ section.campus-video figure iframe {
     top: 0;
     /* height: auto; */
   }
+
+  header.nama-kampus {
+    font-size: 18px;
+  }
+
+  header.nama-kampus p {
+    margin-top: 9px;
+    letter-spacing: 2.5px;
+  }
+
+  /* about */
+  figure.study img {
+    margin-top: 80px;
+    width: 300px;
+    height: 300px;
+  }
+  
+
   /* visi misi */
   header.visi,
   header.misi {
-    width: 320px;
+    width: 330px;
+  }
+  
+  .vertical {
+    display: none;
   }
 
   /* card */
   section.card {
     width: 300px;
-    height: 190px;
+    height: 250px;
   }
 
   header.ilustration h3 {
@@ -395,7 +627,6 @@ section.campus-video figure iframe {
     font-weight: bold;
   }
 }
-
 
 /* phone */
 @media screen and (max-width: 767px) {
@@ -446,12 +677,6 @@ section.campus-video figure iframe {
     height: 17.7rem;
   }
 
-  /* about */
-  /* video#video-banner {
-    width: 100%;
-    height: 100vh;
-  } */
-
   header.info a {
     font-size: 40px;
     margin-top: 15px;
@@ -464,10 +689,6 @@ section.campus-video figure iframe {
     padding: 0px 60px;
   }
 
-  article.pendidikan {
-    width: 300px;  
-  }
-
   article.about p {
     font-size: 10px;
   }
@@ -476,6 +697,22 @@ section.campus-video figure iframe {
   header.visi,
   header.misi {
     width: 350px;
+  }
+
+  header.misi {
+    height: 360px;
+  }
+  article.visi-misi {
+    height: 580px;
+  }
+  
+  header.visi {
+    height: 100px;
+  }
+
+
+  header.visi p {
+    font-size: 15px;
   }
 
   header.info a {
@@ -503,12 +740,13 @@ section.campus-video figure iframe {
   }
 
   /* card */
-  section.kartu {
-    padding: 10px 30px;
+  section.card {
+    height: 160px;
+    width: 240px;
   }
 
-  section.card {
-    height: 150px;
+  header.ilustration {
+    margin-bottom: 8px;
   }
 
   header.ilustration h3 {
@@ -533,9 +771,41 @@ section.campus-video figure iframe {
   }
 
   /* berita */
+  section.berita {
+    padding: 0;
+    height: 100vh;
+  }
+
+  section.news {
+    padding: 0;
+  }
+
 
   /* Content Video  */
   section.campus-video {
+    height: 320px;
+  }
+
+  section.campus-video header h4 {
+    padding-top: 50px;
+  }
+
+  /* footer */
+  section.maps {
+    padding: 0 50px;
+  }
+  section.maps iframe {
+    width: 300px;
     height: 200px;
   }
+
+  footer header {
+    padding-top: 30px;
+    font-size: 12px;
+  }
+  /* section.maps iframe  {
+    width: 380px;
+    height: 230px;
+    text-align: center;
+  } */
 }

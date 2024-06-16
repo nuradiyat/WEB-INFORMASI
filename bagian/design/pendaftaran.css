@@ -27,51 +27,59 @@
     background-color: #45a049;
 }
 
-/* Gaya khusus untuk bagian pendaftaran */
-#pendaftaran {
+/* Gaya dasar untuk elemen */
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.card {
     background-color: #e0f7fa;
     border: 1px solid #00bcd4;
     color: #00796b;
     padding: 20px;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-#pendaftaran h2 {
+.card h2 {
     font-family: 'Arial', sans-serif;
     font-size: 24px;
 }
 
-#pendaftaran ol {
+.card ol {
     padding-left: 20px;
     margin-bottom: 10px;
 }
 
-#pendaftaran a {
+.card a {
     color: #009688;
     text-decoration: none;
 }
 
-#pendaftaran a:hover {
+.card a:hover {
     text-decoration: underline;
 }
 
-#form-pendaftaran form {
+.card form {
     display: flex;
     flex-direction: column;
 }
 
-#form-pendaftaran label {
+.card label {
     margin-top: 10px;
 }
 
-#form-pendaftaran input {
+.card input {
     margin-top: 5px;
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
 
-#form-pendaftaran button[type="submit"] {
+.card button[type="submit"],
+#kembali-button {
     margin-top: 20px;
     background-color: #4CAF50;
     color: white;
@@ -81,19 +89,36 @@
     cursor: pointer;
 }
 
-#form-pendaftaran button[type="submit"]:hover {
+.card button[type="submit"]:hover,
+#kembali-button:hover {
     background-color: #45a049;
 }
 
 #kembali-button {
     background-color: #f44336; /* Warna merah */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 #kembali-button:hover {
     background-color: #d32f2f; /* Warna merah lebih gelap */
+}
+
+/* Media queries untuk layar yang lebih kecil */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card h2 {
+        font-size: 20px;
+    }
+
+    .card input,
+    .card button {
+        padding: 10px;
+        font-size: 16px;
+    }
 }
