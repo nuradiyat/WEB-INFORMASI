@@ -202,6 +202,10 @@ header.info h4 {
   color: #3e4078;
 }
 
+header.visi-misi, p, ol {
+  font-size: 15px;
+}
+
 header.info p {
   margin-top: 18px;
   margin-bottom: 30px;
@@ -261,6 +265,7 @@ section.kartu {
   height: 100vh;
   position: relative;
   padding: 20px;
+  margin-top: 40px;
 }
 
 section.card {
@@ -288,7 +293,7 @@ header.ilustration img {
 }
 
 section.card p {
-  font-size: 8px;
+  font-size: 12.5 px;
   margin-bottom: 30px;
 }
 
@@ -592,18 +597,29 @@ footer .wave#wave4 {
     margin-top: 9px;
     letter-spacing: 2.5px;
   }
+
+  /* about */
+  figure.study img {
+    margin-top: 80px;
+    width: 300px;
+    height: 300px;
+  }
   
 
   /* visi misi */
   header.visi,
   header.misi {
-    width: 320px;
+    width: 330px;
+  }
+  
+  .vertical {
+    display: none;
   }
 
   /* card */
   section.card {
     width: 300px;
-    height: 190px;
+    height: 250px;
   }
 
   header.ilustration h3 {
@@ -683,6 +699,22 @@ footer .wave#wave4 {
     width: 350px;
   }
 
+  header.misi {
+    height: 360px;
+  }
+  article.visi-misi {
+    height: 580px;
+  }
+  
+  header.visi {
+    height: 100px;
+  }
+
+
+  header.visi p {
+    font-size: 15px;
+  }
+
   header.info a {
     padding: 7px 15px;
     font-size: 12px;
@@ -709,7 +741,12 @@ footer .wave#wave4 {
 
   /* card */
   section.card {
-    height: 150px;
+    height: 160px;
+    width: 240px;
+  }
+
+  header.ilustration {
+    margin-bottom: 8px;
   }
 
   header.ilustration h3 {
