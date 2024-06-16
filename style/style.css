@@ -1,26 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Jersey+25&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap");
 
-/* variabel
-:root {
-    --primaryTextColor: #232e25;
-    --secondaryTextColor: #656d72;
-
-    --borderColor: #f1f1f1;
-    --lineColor: #d9d9d9;
-
-    --primaryBackgroundColor: #fff;
-    --secondaryBackgroundColor: #fbfbfb;
-    --thirdBackgroundColor: #f5f3fe;
-
-    --primaryIconColor: #7e74f1;
-    --primaryIconColorHover: #5d51e8;
-
-    --sectionPadding: 6rem 0;
-
-    --itemBorderRadius: 0.7rem;
-} */
-
 * {
   margin: 0;
   padding: 0;
@@ -203,7 +183,7 @@ header.info h4 {
 }
 
 header.visi-misi, p, ol {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 header.info p {
@@ -609,7 +589,7 @@ footer .wave#wave4 {
   /* visi misi */
   header.visi,
   header.misi {
-    width: 330px;
+    width: 360px;
   }
   
   .vertical {
@@ -684,19 +664,18 @@ footer .wave#wave4 {
   }
 
   /* about */
+  section#about {
+    max-width: 100%;
+    overflow: hidden;
+  }
   article.about {
     /* flex-direction: column; */
-    padding: 0px 60px;
+    padding: 0 25px;
   }
+
 
   article.about p {
-    font-size: 10px;
-  }
-
-  /* visi misi */
-  header.visi,
-  header.misi {
-    width: 350px;
+    font-size: 12px;
   }
 
   header.misi {
@@ -710,9 +689,8 @@ footer .wave#wave4 {
     height: 100px;
   }
 
-
-  header.visi p {
-    font-size: 15px;
+  header.visi-misi p, ol {
+    font-size: 12px;
   }
 
   header.info a {
