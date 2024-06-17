@@ -23,12 +23,15 @@ body {
 
 /* button */
 .faculty-list {
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: center;
     gap: 60px;
     width: 100%;
     margin-bottom: 20px;
     padding: 25px 0;
+    background-color: rgb(237, 243, 247);
 }
 
 .faculty-button {
@@ -55,8 +58,9 @@ body {
 
 .departments.active {
     display: block;
+    margin-top: 100px;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     padding: 25px 70px;
 }
 
@@ -101,12 +105,21 @@ li a {
 
 /* back */
 .click-button {
-    background-color: #25fdb8;
     position: fixed;
     bottom: 0;
     right: 0;
     margin: 90px;
-    z-index: 100; 
+    z-index: 100;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    transition: 0.7s;
+    background-color: #25fdb8;
+    color: white;
+}
+
+.click-button:hover {
+    background-color: #1de5f4;
 }
 
 /* footer */
@@ -188,5 +201,15 @@ footer {
     /* footer */
     footer {
         font-size: 11px;
+    }
+
+    /* back */
+    .click-button {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        font-size: 11px;
+        margin: 120px 35px;
+        z-index: 100; 
     }
 }
