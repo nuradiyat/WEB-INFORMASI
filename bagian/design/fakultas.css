@@ -147,6 +147,7 @@ footer {
 @media screen and (max-width: 767px){
     .departments.active {
         padding: 8px 35px;
+        height: 78vh;
     }
 
 
@@ -182,5 +183,10 @@ footer {
 
     .click-button {
         margin: 70px;
+    }
+
+    /* footer */
+    footer {
+        font-size: 11px;
     }
 }
