@@ -152,7 +152,7 @@ section#about {
 article.about {
   display: flex;
   flex-direction: column;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 article.pendidikan,
@@ -270,7 +270,7 @@ header.ilustration img {
 }
 
 section.card p {
-  font-size: 12.5 px;
+  font-size: 15px;
   margin-bottom: 30px;
 }
 
