@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Jersey+25&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background: linear-gradient(transparent, #00c6ff);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #30ff00);
+}
+
+/* container */
+section.container {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 30px;
+  font-family: "Anton", sans-serif;
+}
+
+/* navigation */
+nav.navigation {
+  width: 100%;
+  padding: 23px 50px;
+}
+
+nav.navigation ul {
+  list-style: none;
+}
+
+nav.navigation ul li {
+  display: flex;
+  gap: 5px;
+  font-size: 20px;
+  width: 150px;
+  transition: 0.5s;
+}
+
+nav.navigation ul li a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+nav.navigation ul li a:hover {
+  color: #3e4078;
+}
+
+nav.navigation ul li:hover {
+  color: #3e4078;
+}

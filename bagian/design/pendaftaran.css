@@ -1,124 +1,136 @@
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background: linear-gradient(transparent, #00c6ff);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #30ff00);
+}
 /* Gaya umum untuk semua kartu */
 .card {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px;
-    background-color: #f9f9f9; /* Warna latar belakang default */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #f9f9f9; /* Warna latar belakang default */
 }
 
 /* Gaya khusus untuk bagian pendaftaran */
 #pendaftaran {
-    background-color: #e0f7fa; /* Warna latar belakang khusus untuk pendaftaran */
-    border: 1px solid #00bcd4; /* Warna border khusus untuk pendaftaran */
+  background-color: #e0f7fa; /* Warna latar belakang khusus untuk pendaftaran */
+  border: 1px solid #00bcd4; /* Warna border khusus untuk pendaftaran */
 }
 
 /* Gaya umum untuk tombol */
 .click-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .click-button:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
 /* Gaya dasar untuk elemen */
 .container {
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
 }
 
 .card {
-    background-color: #e0f7fa;
-    border: 1px solid #00bcd4;
-    color: #00796b;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+  background-color: #e0f7fa;
+  border: 1px solid #00bcd4;
+  color: #00796b;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .card h2 {
-    font-family: 'Arial', sans-serif;
-    font-size: 24px;
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
 }
 
 .card ol {
-    padding-left: 20px;
-    margin-bottom: 10px;
+  padding-left: 20px;
+  margin-bottom: 10px;
 }
 
 .card a {
-    color: #009688;
-    text-decoration: none;
+  color: #009688;
+  text-decoration: none;
 }
 
 .card a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .card form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .card label {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .card input {
-    margin-top: 5px;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 .card button[type="submit"],
 #kembali-button {
-    margin-top: 20px;
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  margin-top: 20px;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .card button[type="submit"]:hover,
 #kembali-button:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
 #kembali-button {
-    background-color: #f44336; /* Warna merah */
+  background-color: #f44336; /* Warna merah */
 }
 
 #kembali-button:hover {
-    background-color: #d32f2f; /* Warna merah lebih gelap */
+  background-color: #d32f2f; /* Warna merah lebih gelap */
 }
 
 /* Media queries untuk layar yang lebih kecil */
 @media (max-width: 600px) {
-    .container {
-        padding: 10px;
-    }
+  .container {
+    padding: 10px;
+  }
 
-    .card {
-        padding: 15px;
-    }
+  .card {
+    padding: 15px;
+  }
 
-    .card h2 {
-        font-size: 20px;
-    }
+  .card h2 {
+    font-size: 20px;
+  }
 
-    .card input,
-    .card button {
-        padding: 10px;
-        font-size: 16px;
-    }
+  .card input,
+  .card button {
+    padding: 10px;
+    font-size: 16px;
+  }
 }
