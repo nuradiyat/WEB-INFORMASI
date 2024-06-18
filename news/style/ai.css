@@ -124,13 +124,16 @@ footer {
 }
 
 /* phone */
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 767px) {
+  section.container {
+    padding: 0 50px;
+  }
   nav ul li {
-    font-size: 14px;
+    font-size: 14PX;
   }
 
   section.content {
-    height: 85vh;
+    height: 83vh;
   }
 
   figure img {
@@ -143,6 +146,11 @@ footer {
   }
 
   article p {
+    font-size: 10px;
+  }
+
+  /* footer */
+  footer {
     font-size: 9px;
   }
 }
