@@ -116,6 +116,8 @@ li a {
     transition: 0.7s;
     background-color: #25fdb8;
     color: white;
+    border: none;
+    outline: none;
 }
 
 .click-button:hover {

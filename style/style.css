@@ -350,6 +350,7 @@ figure#berita header {
 
 figure#berita:hover header {
   bottom: 0;
+  color: white;
 }
 figure#berita header h4 {
   text-transform: uppercase;
@@ -360,7 +361,7 @@ figure#berita header h4 {
 figure#berita header p {
   font-size: 14px;
   line-height: 20px;
-  margin: 40px 0px;
+  margin: 20px 0;
 }
 
 figure#berita header a {
@@ -602,6 +603,15 @@ footer .wave#wave4 {
   header.ilustration h3 {
     font-size: medium;
     font-weight: bold;
+  }
+
+  /* bsi news */
+  figure#berita header h4 {
+    font-size: 13px;
+  }
+
+  figure#berita header p {
+    font-size: 12px;
   }
 }
 
