@@ -38,6 +38,7 @@ section.container {
 nav {
   width: 100%;
   padding: 23px 0;
+  background-color: rgba(250, 235, 215, 0.185);
 }
 
 nav ul {
