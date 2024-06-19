@@ -43,7 +43,6 @@ body {
   width: 100%;
   margin-bottom: 20px;
   padding: 25px 0;
-  background-color: rgb(237, 243, 247);
 }
 
 .faculty-button {
@@ -105,11 +104,17 @@ li img {
   width: 25px;
   height: 25px;
 }
+
 li a {
   text-decoration: none;
   color: black;
   font-family: "Anton", sans-serif;
   margin: auto 0;
+  transition: 0.5s;
+}
+li a:hover {
+  color: #3e4078;
+  cursor: pointer;
 }
 
 /* back */

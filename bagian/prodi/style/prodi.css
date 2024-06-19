@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Jersey+25&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background: linear-gradient(transparent, #00c6ff);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #30ff00);
+}
+
+body {
+  background-color: rgba(250, 235, 215, 0.185);
+  font-family: "Anton", sans-serif;
+}
+
+/* container */
+section.container {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 60px;
+  font-family: "Anton", sans-serif;
+}
