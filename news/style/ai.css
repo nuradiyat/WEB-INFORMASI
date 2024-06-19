@@ -21,6 +21,11 @@
   background: linear-gradient(transparent, #30ff00);
 }
 
+body {
+  background-color: rgba(250, 235, 215, 0.185);
+  font-family: "Anton", sans-serif;
+}
+
 /* container */
 section.container {
   max-width: 100%;
@@ -45,6 +50,10 @@ nav ul li {
   font-size: 20px;
   width: 150px;
   transition: 0.5s;
+}
+
+nav ul li:hover {
+  cursor: pointer;
 }
 
 nav ul li a {
@@ -107,9 +116,9 @@ footer {
 /* tablet */
 @media screen and (max-width: 950px) {
   section.content {
-    height: 85vh;
+    height: 86vh;
   }
-  
+
   figure img {
     height: 200px;
   }
@@ -126,7 +135,7 @@ footer {
 /* phone */
 @media screen and (max-width: 767px) {
   section.container {
-    padding: 0 50px;
+    padding: 0 40px;
   }
   nav ul li {
     font-size: 14PX;
@@ -146,7 +155,7 @@ footer {
   }
 
   article p {
-    font-size: 10px;
+    font-size: 9px;
   }
 
   /* footer */
