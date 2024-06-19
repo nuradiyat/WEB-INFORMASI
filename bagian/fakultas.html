@@ -1,15 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="design/fakultas.css">
-    <link rel="icon" href="logo/bsi.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="design/fakultas.css" />
+    <script src="javascript/fakultas.js"></script>
+    <link rel="icon" href="logo/bsi.png" />
     <title>FAKULTAS</title>
-</head>
-<body>
-    <a href="../#kartu">Kembali2</a>
-    <a href="../index.html">Kembali</a>
-</body>
+  </head>
+  <body>
+    <!-- container -->
+    <section class="container">
+      <!-- list -->
+      <section class="faculty-list">
+        <button class="faculty-button" data-faculty="teknik">
+          Fakultas FTI
+        </button>
+        <button class="faculty-button" data-faculty="feb">Fakultas FEB</button>
+        <button class="faculty-button" data-faculty="bisnis">
+          Fakultas FKB
+        </button>
+      </section>
+
+      <!-- container -->
+      <section class="departments" id="teknik">
+        <article>
+          <h2>Fakultas Teknik & Informatika</h2>
+          <p>
+            Perkembangan sektor industri dan Teknologi informasi di Indonesia
+            sangatlah pesat. Penyajian suatu informasi yang informatif sangatlah
+            diperlukan, untuk mendukung hal tersebut diperlukan tenaga-tenaga
+            terampil, ahli serta professional. Fakultas Teknik & Informatika
+            membekali mahasiswanya dengan kompetensi ketenagalistrikan dan
+            otomasi industri, kemampuan ilmu komputer spesialisasi di bidang
+            dasar-dasar ilmu komputer agar dapat menghasilkan aplikasi-aplikasi
+            perangkat lunak komputer, yang dapat mengikuti perkembangan industri
+            dan teknologi informasi baru. Menyiapkan mahasiswa agar menjadi
+            lulusan yang handal di bidang Industri dan IT sehingga dapat
+            diterapkan pada saat bekerja di perusahaan swasta maupun pemerintah.
+          </p>
+        </article>
+
+        <ul>
+          <header>
+            <h4>Program Studi</h4>
+          </header>
+
+          <li><img src="../img/toga.png" alt="toga"><a href="#">S1 - Sowtware Engineering (RPL)</a></li>
+          <li><img src="../img/toga.png" alt=""><a href="#">S1 - Informatika</a></li>
+          <li><img src="../img/toga.png" alt=""><a href="#">S1 - Teknologi Informasi</a></li>
+          <li><img src="../img/toga.png" alt=""><a href="#">S1 - Sistem Informasi</a></li>
+          <li><img src="../img/toga.png" alt=""><a href="#">S1 - Teknik Elektro</a></li>
+          <li><img src="../img/toga.png" alt=""><a href="#">S1 - Teknik Industri</a></li>
+          <li><img src="../img/toga.png" alt=""><a href="#">D3 - Sistem Informasi Akuntansi</a></li>
+          <li><img src="../img/toga.png" alt=""><a href="#">D3 - Sistem Informasi</a></li>
+          <li><img src="../img/toga.png" alt=""><a href="#">D3 - Teknologi Komputer</a></li>
+        </ul>
+    </section>
+    
+    <!-- jurusan -->
+    <section class="departments" id="feb">
+        <article>
+            <h2>Fakultas Ekonomi & Bisnis</h2>
+            <p>
+                Era globalisasi yang terjadi saat ini, telah merubah tatanan
+                kehidupan perekonomian hampir seluruh masyarakat Indonesia. Hal
+                tersebut menyebabkan perkembangan ilmu ekonomi dan bisnis semakin
+                dibutuhkan, disisi lain diperlukan pengetahuan, gagasan, metode dan
+                teknik yang lebih praktis untuk memecahkan masalah-masalah
+                perekonomian. Fakultas Ekonomi dan Bisnis Universitas ina Sarana
+                Informatika berupaya membekali mahasiswanya dengan kemampuan
+                analisa, konsep ekonomi, manajemen dan akuntansi berbasis ICT
+                (Informations and Communications Technology) untuk siap menghadapi
+                tantangan di masa depan.
+            </p>
+        </article>
+
+        <ul>
+            <header>
+                <h4>Program Studi</h4>
+            </header>
+        
+            <li><img src="../img/toga.png" alt=""><a href="#">S1 - Akuntansi</a></li>
+            <li><img src="../img/toga.png" alt=""><a href="#">S1 - Manajemen</a></li>
+            <li><img src="../img/toga.png" alt=""><a href="#">S1 - Parawisata</a></li>
+            <li><img src="../img/toga.png" alt=""><a href="#">S1 - Hukum Bisnis</a></li>
+            <li><img src="../img/toga.png" alt=""><a href="#">D3 - Administrasi Perkantoran</a></li>
+            <li><img src="../img/toga.png" alt=""><a href="#">D3 - Administrasi Bisnis</a></li>
+            <li><img src="../img/toga.png" alt=""><a href="#">D3 - Perhotelan</a></li>
+            <li><img src="../img/toga.png" alt=""><a href="#">D3 - Akuntansi</a></li>
+            <li><img src="../img/toga.png" alt=""><a href="#">D3 - Manajemen Perpajakan</a></li>
+        </ul>
+    </section>
+    <section class="departments" id="bisnis">
+        <article>
+          <h2>Fakultas Komunikasi & Bahasa</h2>
+          <p>
+            Perkembangan ICT (Informations and Communications Technology) telah
+            merubah cara manusia berkomunikasi. Arus informasi terus bergulir
+            dengan cepat, dari kondisi statis menuju kearah dinamis. Oleh karena
+            itu, Fakultas Komunikasi dan Bahasa Universitas Bina Sarana
+            Informatika sejak awal berkomitmen terhadap kualitas lulusannya
+            dengan memiliki kompetensi dalam berbahasa dan berkomunikasi dengan
+            menggunakan bahasa inggris yang baik secara lisan maupun tulisan,
+            kompetensi dalam berfikir kreatif dan kritis. Dalam sistem
+            pembelajaran, Fakultas Komunikasi dan Bahasa menerapkan dan
+            mengembangkan metode student centered learning dan problem solving
+            learning yang mengarahkan dosen dan mahasiswa untuk saling
+            berinteraksi, berbagi, dan berkolaborasi dalam pemecahan masalah
+            yang menurut pemahaman dan pengaplikasian teori. Dalam metode ini,
+            mahasiswa diarahkan kemampuannya secara langsung dan intensif.
+          </p>
+        </article>
+
+        <ul>
+            <header>
+                <h4>Program Studi</h4>
+            </header>
+        
+            <li><img src="../img/toga.png" alt=""><a href="#">S1 - Sastra Inggris</a></li>
+            <li><img src="../img/toga.png" alt=""><a href="#">S1 - Komunikasi</a></li>
+            <li><img src="../img/toga.png" alt=""><a href="#">D3 - Bahasa Inggris</a></li>
+            <li><img src="../img/toga.png" alt=""><a href="#">D3 - Hubungan Masyarakat</a></li>
+            <li><img src="../img/toga.png" alt=""><a href="#">D3 - Penyiaran</a></li>
+            <li><img src="../img/toga.png" alt=""><a href="#">D3 - Periklanan</a></li>
+        </ul>
+      </section>
+
+      <!-- back -->
+      <button class="click-button" id="kembali-button">KEMBALI</button>
+      <!-- footer -->
+      <footer>
+        <p>Copyright &copy;2024 | By.Kelompok3</p>
+      </footer>
+    </section>
+
+    <script>
+        document.getElementById('kembali-button').addEventListener('click', function() {
+            window.history.back();
+        });
+    </script>
+  </body>
 </html>

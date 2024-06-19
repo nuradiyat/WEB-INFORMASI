@@ -1,26 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Jersey+25&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap");
 
-/* variabel
-:root {
-    --primaryTextColor: #232e25;
-    --secondaryTextColor: #656d72;
-
-    --borderColor: #f1f1f1;
-    --lineColor: #d9d9d9;
-
-    --primaryBackgroundColor: #fff;
-    --secondaryBackgroundColor: #fbfbfb;
-    --thirdBackgroundColor: #f5f3fe;
-
-    --primaryIconColor: #7e74f1;
-    --primaryIconColorHover: #5d51e8;
-
-    --sectionPadding: 6rem 0;
-
-    --itemBorderRadius: 0.7rem;
-} */
-
 * {
   margin: 0;
   padding: 0;
@@ -55,7 +35,7 @@ header#navigation {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1;
+  z-index: 1000;
 }
 nav.navbar {
   /* width: 100%; */
@@ -172,7 +152,7 @@ section#about {
 article.about {
   display: flex;
   flex-direction: column;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 article.pendidikan,
@@ -202,9 +182,6 @@ header.info h4 {
   color: #3e4078;
 }
 
-header.visi-misi, p, ol {
-  font-size: 15px;
-}
 
 header.info p {
   margin-top: 18px;
@@ -293,7 +270,7 @@ header.ilustration img {
 }
 
 section.card p {
-  font-size: 12.5 px;
+  font-size: 15px;
   margin-bottom: 30px;
 }
 
@@ -373,6 +350,7 @@ figure#berita header {
 
 figure#berita:hover header {
   bottom: 0;
+  color: white;
 }
 figure#berita header h4 {
   text-transform: uppercase;
@@ -383,7 +361,7 @@ figure#berita header h4 {
 figure#berita header p {
   font-size: 14px;
   line-height: 20px;
-  margin: 40px 0px;
+  margin: 20px 0;
 }
 
 figure#berita header a {
@@ -504,28 +482,28 @@ footer .wave {
 }
 
 footer .wave#wave1 {
-  z-index: 1000;
+  z-index: 900;
   opacity: 1;
   bottom: 0;
   animation: animateWave 4s linear infinite;
 }
 
 footer .wave#wave2 {
-  z-index: 999;
+  z-index: 800;
   opacity: 0.5;
   bottom: 10px;
   animation: animateWave_02 4s linear infinite;
 }
 
 footer .wave#wave3 {
-  z-index: 1000;
+  z-index: 900;
   opacity: 0.2;
   bottom: 15px;
   animation: animateWave 3s linear infinite;
 }
 
 footer .wave#wave4 {
-  z-index: 999;
+  z-index: 800;
   opacity: 0.7;
   bottom: 20px;
   animation: animateWave_02 3s linear infinite;
@@ -609,7 +587,7 @@ footer .wave#wave4 {
   /* visi misi */
   header.visi,
   header.misi {
-    width: 330px;
+    width: 360px;
   }
   
   .vertical {
@@ -625,6 +603,15 @@ footer .wave#wave4 {
   header.ilustration h3 {
     font-size: medium;
     font-weight: bold;
+  }
+
+  /* bsi news */
+  figure#berita header h4 {
+    font-size: 13px;
+  }
+
+  figure#berita header p {
+    font-size: 12px;
   }
 }
 
@@ -684,19 +671,18 @@ footer .wave#wave4 {
   }
 
   /* about */
+  section#about {
+    max-width: 100%;
+    overflow: hidden;
+  }
   article.about {
     /* flex-direction: column; */
-    padding: 0px 60px;
+    padding: 0 25px;
   }
+
 
   article.about p {
-    font-size: 10px;
-  }
-
-  /* visi misi */
-  header.visi,
-  header.misi {
-    width: 350px;
+    font-size: 12px;
   }
 
   header.misi {
@@ -710,9 +696,8 @@ footer .wave#wave4 {
     height: 100px;
   }
 
-
-  header.visi p {
-    font-size: 15px;
+  header.visi-misi p, ol {
+    font-size: 12px;
   }
 
   header.info a {
@@ -740,6 +725,9 @@ footer .wave#wave4 {
   }
 
   /* card */
+  section.kartu {
+    margin: 0;
+  }
   section.card {
     height: 160px;
     width: 240px;
