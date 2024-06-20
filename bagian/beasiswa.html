@@ -19,11 +19,11 @@
       <li><strong>Beasiswa Olahraga:</strong> Untuk mahasiswa berprestasi di bidang olahraga.</li>
     </ul>
   
-    <a href="link_ke_halaman_beasiswa" class="button">Klik untuk informasi lengkap</a>
+    <a href="https://bsi.today/beasiswa/" class="button">Klik untuk informasi lengkap</a>
   
     <div class="form-section">
       <h3>Formulir Pendaftaran Beasiswa</h3>
-      <form action="submit_form_action" method="post">
+      <form action="submit_form_action" method="post" enctype="multipart/form-data">
         <label for="name">Nama Lengkap:</label>
         <input type="text" id="name" name="name" required>
   
@@ -40,19 +40,14 @@
           <option value="olahraga">Beasiswa Olahraga</option>
         </select>
   
+        <label for="certificates">Unggah Sertifikat:</label>
+        <input type="file" id="certificates" name="certificates[]" multiple required>
+  
         <label for="comments">Komentar Tambahan:</label>
         <textarea id="comments" name="comments"></textarea>
   
         <button type="submit" class="button submit-button">Kirim</button>
       </form>
     </div>
-  
-    <a href="javascript:history.back()" class="button back-button">Kembali</a>
-  </div>
-  
-  
-      
-    <a href="../#kartu">Kembali2</a>
-    <a href="../index.html">Kembali</a>
 </body>
 </html>

@@ -198,3 +198,106 @@ textarea {
 .back-button:hover {
   background-color: #e5533d;
 }
+
+.card {
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 80%;
+  max-width: 800px;
+  text-align: left;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.scholarship-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.scholarship-list li {
+  margin-bottom: 5px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #00c6a2;
+  border-radius: 20px;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #00a088;
+}
+
+.form-section {
+  margin-top: 20px;
+}
+
+.form-section h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+input, select, textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+input[type="file"] {
+  padding: 3px;
+}
+
+.submit-button {
+  background-color: #4CAF50;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+.back-button {
+  background-color: #ff6347;
+  margin-top: 20px;
+}
+
+.back-button:hover {
+  background-color: #e5533d;
+}
