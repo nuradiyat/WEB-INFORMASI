@@ -72,13 +72,8 @@ body {
 }
 
 .card a {
-<<<<<<< HEAD
     color: #005296;
     text-decoration: none;
-=======
-  color: #009688;
-  text-decoration: none;
->>>>>>> 6b9e59ee1ec790ede1b1853b6b7b23baed2d66c7
 }
 
 .card a:hover {
