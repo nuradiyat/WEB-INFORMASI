@@ -21,28 +21,35 @@
   
     <a href="link_ke_halaman_beasiswa" class="button">Klik untuk informasi lengkap</a>
   
-    <div class="testimonials">
-      <h3>Testimoni</h3>
-      <p>"Beasiswa ini sangat membantu saya dalam menyelesaikan studi saya." - Andi, Mahasiswa</p>
-      <p>"Saya sangat berterima kasih atas kesempatan yang diberikan oleh program beasiswa ini." - Budi, Mahasiswa</p>
-    </div>
+    <div class="form-section">
+      <h3>Formulir Pendaftaran Beasiswa</h3>
+      <form action="submit_form_action" method="post">
+        <label for="name">Nama Lengkap:</label>
+        <input type="text" id="name" name="name" required>
   
-    <div class="faq">
-      <h3>FAQ</h3>
-      <p><strong>Bagaimana cara mendaftar beasiswa?</strong> Anda bisa mendaftar melalui link berikut: <a href="link_ke_formulir_pendaftaran">Formulir Pendaftaran</a></p>
-      <p><strong>Apa saja persyaratan beasiswa?</strong> Persyaratan beasiswa bisa dilihat di halaman informasi lengkap beasiswa.</p>
-    </div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
   
-    <div class="contact-info">
-      <p>Untuk informasi lebih lanjut:</p>
-      <p>Email: <a href="mailto:info@beasiswa.com">info@beasiswa.com</a></p>
-      <p>Telp: (021) 12345678</p>
+        <label for="phone">Nomor Telepon:</label>
+        <input type="tel" id="phone" name="phone" required>
+  
+        <label for="scholarship-type">Jenis Beasiswa:</label>
+        <select id="scholarship-type" name="scholarship_type" required>
+          <option value="unggulan">Beasiswa Unggulan</option>
+          <option value="sosial">Beasiswa Sosial</option>
+          <option value="olahraga">Beasiswa Olahraga</option>
+        </select>
+  
+        <label for="comments">Komentar Tambahan:</label>
+        <textarea id="comments" name="comments"></textarea>
+  
+        <button type="submit" class="button submit-button">Kirim</button>
+      </form>
     </div>
   
     <a href="javascript:history.back()" class="button back-button">Kembali</a>
-  
-    <img src="icon_beasiswa.png" alt="Icon Beasiswa" class="icon">
   </div>
+  
   
       
     <a href="../#kartu">Kembali2</a>
