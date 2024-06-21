@@ -9,6 +9,8 @@ body {
   justify-content: center;
   background-color: rgba(250, 235, 215, 0.185);
   font-family: "Anton", sans-serif;
+  max-width: 100%;
+  overflow: hidden;
 }
 .card {
   border: 1px solid #000;
