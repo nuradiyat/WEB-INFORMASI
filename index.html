@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
     <link rel="icon" href="img/bsi.png" />
-    <title>Univercitas Binasarana Infromatika</title>
+    <title>Universitas BSI</title>
   </head>
   <body>
     <!-- header -->
@@ -32,7 +32,8 @@
             <li><a href="#" class="nav-link">HOME</a></li>
             <li><a href="#about" class="nav-link">ABOUT</a></li>
             <li><a href="#kartu" class="nav-link">CONTENT</a></li>
-            <li><a href="#contact" class="nav-link">CONTACT</a></li>
+            <li><a href="#contact-us" class="nav-link">CONTACT</a></li>
+            <li><a href="#sosmed" class="nav-link">SOSMED</a></li>
           </ul>
         </nav>
       </header>
@@ -50,7 +51,7 @@
         <!-- <video loop autoplay muted id="video-banner">
       </video> -->
         <header class="nama-kampus">
-          <h3>UNIVERCITAS</h3>
+          <h3>UNIVERSITAS</h3>
           <p>BINA SARANA INFORMATIKA</p>
         </header>
 
@@ -206,8 +207,33 @@
         </figure>
       </section>
 
+      <!-- contact us -->
+      <section class="contact-us" id="contact-us">
+        <header>
+          <h4 class="judul-video">CONTACT US</h4>
+        </header>
+        <form action="contact-us.php" method="POST" class="contact-form">
+          <label for="nama-depan">Nama Depan</label>
+          <input type="text" id="nama-depan" name="nama-depan" required>
+
+          <label for="nama-belakang">Nama Belakang</label>
+          <input type="text" id="nama-belakang" name="nama-belakang" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="no-hp">Nomor Telepon</label>
+          <input type="no-hp" id="no-hp" name="no-hp" required>
+
+          <label for="message">Pesan</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Kirim</button>
+        </form>
+      </section>
+
       <!-- footer/informasi -->
-      <footer id="contact">
+      <footer id="sosmed">
         <div class="waves">
           <div class="wave" id="wave1"></div>
           <div class="wave" id="wave2"></div>
