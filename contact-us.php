@@ -1,35 +1,68 @@
-<html>
+<?php
+// Konfigurasi database
+$servername = "localhost";
+$username = "root"; // Ganti dengan username database Anda
+$password = ""; // Ganti dengan password database Anda
+$dbname = "ubsi"; // Ganti dengan nama database Anda
+
+// Membuat koneksi
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Memeriksa koneksi
+if ($conn->connect_error) {
+    die("Koneksi gagal: " . $conn->connect_error);
+}
+
+// Mendapatkan data dari formulir
+$namaDepan = $_POST['nama-depan'];
+$namaBelakang = $_POST['nama-belakang'];
+$email = $_POST['email'];
+$noHp = $_POST['no-hp'];
+$message = $_POST['message'];
+
+// Menyimpan data ke database
+$sql = "INSERT INTO contacts (nama_depan, nama_belakang, email, no_hp, message) VALUES ('$namaDepan', '$namaBelakang', '$email', '$noHp', '$message')";
+
+// Jika query berhasil
+if ($conn->query($sql) === TRUE) {
+
+
+    // Menampilkan data yang disimpan dalam bentuk tabel
+    echo "<!DOCTYPE html>
+    <html lang='en'>
     <head>
         <meta charset='UTF-8'>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-        <link rel='stylesheet' href='style/style.css'>
-        <title>Pengiriman Berhasil</title>
-        <link rel="icon" href="img/bsi.png" />
-        <script type="text/javascript">
-            function message()
-            {
-                alert("Pengiriman Berhasil !! Akan segera kami hubungi kembali")
-            }
-        </script>
+        <title>Data Berhasil Disimpan</title>
+        <link rel='stylesheet' href='style/contact.css'> <!-- Tautan ke file CSS eksternal -->
     </head>
-    <body onload="message()">
-    </body>
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $namadepan = htmlspecialchars($_POST['nama-depan']);
-    $namabelakang = htmlspecialchars($_POST['nama-belakang']);
-    $email = htmlspecialchars($_POST['email']);
-    $nohp = htmlspecialchars($_POST['no-hp']);
-    $message = htmlspecialchars($_POST['message']);
-
-    echo "<!DOCTYPE html>
     <body>
-        <div class='confirmation-message'>
-            <center><h1>Terima kasih telah menghubungi kami, $namadepan!</h1><br></center>
-            <center><p>Kami telah menerima pesan Anda dan kami akan segera menghubungi Anda kembali.</p><br></center>
-            <center><a href='index.html'>Kembali ke Home</a></center>
-        </div>
+        <h2>Data berhasil disimpan</h2>
+        <table>
+            <tr>
+                <th>Nama Depan</th>
+                <th>Nama Belakang</th>
+                <th>Email</th>
+                <th>Nomor Telepon</th>
+                <th>Pesan</th>
+            </tr>
+            <tr>
+                <td>$namaDepan</td>
+                <td>$namaBelakang</td>
+                <td>$email</td>
+                <td>$noHp</td>
+                <td>$message</td>
+            </tr>
+        </table>
+
+        <button onclick=\"history.back()\">Back</button>
     </body>
     </html>";
+    
+} else {
+    // Menampilkan pesan error jika query gagal
+    echo "Error: " . $sql . "<br>" . $conn->error;
 }
+
+// Menutup koneksi
+$conn->close();
 ?>

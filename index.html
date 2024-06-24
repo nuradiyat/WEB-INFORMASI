@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -62,7 +63,7 @@
       <section id="about">
         <article class="about">
           <article class="pendidikan">
-            <header class="info">
+            <header class="info" data-aos="fade-up" data-aos-duration="1500">
               <h4>PENDIDIKAN</h4>
               <p>
                 Universitas Bina Sarana Informatika UBSI didirikan pada tahun 1988 oleh Drs. 
@@ -72,21 +73,21 @@
               </p>
               <a href="#kartu">SHOW</a>
             </header>
-            <figure class="study">
+            <figure class="study" data-aos="fade-down" data-aos-duration="1500">
               <img src="img/ubsi.jpg" alt="ubsi" />
             </figure>
           </article>
 
           <article class="visi-misi">
-            <header class="visi">
+            <header class="visi" data-aos="fade-right" data-aos-duration="1500">
               <h4>VISI</h4>
               <p>
                 Menjadi universitas unggul di bidang ekonomi kreatif pada tahun 2033.
               </p>
             </header>
-            <hr />
+            <hr>
             <section class="vertical"></section>
-            <header class="misi">
+            <header class="misi" data-aos="fade-left" data-aos-duration="1500">
               <h4>MISI</h4>
               <ol>
                 <li> Menyelenggarakan program pendidikan akademik dan vokasi yang mendukung ekonomi kreatif.</li>
@@ -102,7 +103,7 @@
 
       <!-- CARD -->
       <section class="kartu" id="kartu">
-        <section class="card">
+        <section class="card" data-aos="flip-left" data-aos-duration="1500">
           <header class="ilustration">
             <!-- ganti ini -->
             <h3>PENDAFTARAN</h3>
@@ -114,7 +115,7 @@
           </p>
           <a href="bagian/pendaftaran.html">CLICK</a>
         </section>
-        <section class="card">
+        <section class="card" data-aos="flip-right" data-aos-duration="1500">
           <header class="ilustration">
             <!-- ganti ini -->
             <h3>BEASISWA</h3>
@@ -126,7 +127,7 @@
           </p>
           <a href="bagian/beasiswa.html">CLICK</a>
         </section>
-        <section class="card">
+        <section class="card" data-aos="flip-up" data-aos-duration="1500">
           <header class="ilustration">
             <!-- ganti ini -->
             <h3>STRUKTUR</h3>
@@ -138,7 +139,7 @@
           </p>
           <a href="bagian/struktur.html">CLICK</a>
         </section>
-        <section class="card">
+        <section class="card" data-aos="flip-down" data-aos-duration="1500">
           <header class="ilustration">
             <!-- ganti ini -->
             <h3>FAKULTAS</h3>
@@ -154,7 +155,7 @@
       </section>
       
       <!-- berita -->
-      <section class="berita">
+      <section class="berita" data-aos="fade-up" data-aos-duration="1500">
         <header class="tittle">
           <h4>BSI NEWS</h4>
         </header>
@@ -188,7 +189,7 @@
       </section>
       
       <!-- campus video -->
-      <section class="campus-video">
+      <section class="campus-video" data-aos="fade-up" data-aos-duration="1500">
         <header>
           <h4 class="judul-video">CAMPUS VIDEO</h4>
         </header>
@@ -208,7 +209,7 @@
       </section>
 
       <!-- contact us -->
-      <section class="contact-us" id="contact-us">
+      <section class="contact-us" id="contact-us" data-aos="fade-up" data-aos-duration="1500">
         <header>
           <h4 class="judul-video">CONTACT US</h4>
         </header>
@@ -233,7 +234,7 @@
       </section>
 
       <!-- footer/informasi -->
-      <footer id="sosmed">
+      <footer id="sosmed" data-aos="fade-up" data-aos-duration="1500">
         <div class="waves">
           <div class="wave" id="wave1"></div>
           <div class="wave" id="wave2"></div>
@@ -264,6 +265,10 @@
   </section>
 
   <!-- javascript -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="js/main.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

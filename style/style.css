@@ -835,6 +835,11 @@ footer .wave#wave4 {
     padding-top: 50px;
   }
 
+  /* contact */
+  .contact-form {
+    width: 85%;
+  }
+
   /* footer */
   section.maps {
     padding: 0 50px;
