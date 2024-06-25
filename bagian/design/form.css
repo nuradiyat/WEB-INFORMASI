@@ -4,19 +4,18 @@ body {
     overflow: hidden;
     font-family: sans-serif;
 }
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 20px 0;
-    font-size: 14px;
-    text-align: left;
-}
-
 h2 {
     text-align: center;
 }
-
+table {
+    max-width: 100%;
+    overflow: hidden;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 15px;
+    text-align: left;
+}
 table, th, td {
     border: 1px solid #ddd;
 }
@@ -54,11 +53,11 @@ button:hover {
     table {
         font-size: 8px;
     }
-    
+
     th, td {
         padding: 3px;
     }
-    
+
     button {
         padding: 5px 10px;
     }

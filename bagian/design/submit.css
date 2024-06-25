@@ -1,22 +1,49 @@
-/* Gaya untuk tabel */
+/* Gaya untuk form */
 body {
     max-width: 100%;
     overflow: hidden;
     font-family: sans-serif;
 }
 
-table {
-    border-collapse: collapse;
+.contact-form {
+    width: 300px;
+    margin: 0 auto;
+}
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+.contact-form input, .contact-form textarea {
     width: 100%;
-    margin: 20px 0;
-    font-size: 14px;
-    text-align: left;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    background: #0056b3;
 }
 
 h2 {
     text-align: center;
 }
 
+/* Gaya untuk tabel */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
 table, th, td {
     border: 1px solid #ddd;
 }
@@ -54,11 +81,11 @@ button:hover {
     table {
         font-size: 8px;
     }
-    
+
     th, td {
         padding: 3px;
     }
-    
+
     button {
         padding: 5px 10px;
     }

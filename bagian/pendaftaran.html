@@ -28,7 +28,7 @@
         <button class="click-button" id="daftar-sekarang-button">DAFTAR SEKARANG</button>
         <!-- Formulir Pendaftaran yang Tersembunyi -->
         <div id="form-pendaftaran" style="display: none; margin-top: 20px;">
-            <form action="/submit-pendaftaran" method="post">
+            <form action="submit-pendaftaran.php" method="post" enctype="multipart/form-data">
                 <label for="nama">Nama Lengkap:</label><br>
                 <input type="text" id="nama" name="nama" required><br><br>
                 <label for="email">Email:</label><br>
@@ -37,8 +37,7 @@
                 <input type="tel" id="telepon" name="telepon" required><br><br>
                 <label for="ijazah">Upload Ijazah:</label><br>
                 <input type="file" id="ijazah" name="ijazah" accept=".pdf,.jpg,.png" required><br><br>
-                
-                <input type="submit" class="click-button">Kirim</input>
+                <input type="submit" class="click-button" value="Kirim">
             </form>
         </div>
                 <!-- Tombol Kembali -->
